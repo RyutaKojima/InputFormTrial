@@ -188,6 +188,11 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
+        // aタグのtargetをすべて'_blank'に置き換える
+        const aTagAll = document.querySelectorAll('a');
+        for (let aTag of aTagAll) {
+            aTag.target = '_blank';
+        }
     });
 </script>
 </body>
