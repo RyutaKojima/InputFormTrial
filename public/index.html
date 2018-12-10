@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>お試しInput</title>
@@ -16,108 +16,156 @@
     <script defer src="/__/firebase/init.js"></script>
 
     <style>
-      input, label {
-        margin: 10px 10px;
-        display: block;
-      }
-      input {
-        margin-left: 30px;
-      }
-      .warning {
-        color: red;
-      }
+        input, label {
+            margin: 10px 10px;
+            display: block;
+        }
+
+        input {
+            margin-left: 30px;
+        }
+
+        .warning {
+            color: red;
+        }
     </style>
-  </head>
-  <body>
-    <main>
-      <div id="container">
-        <div class="text-wapper">
-          <h1>テキスト型</h1>
+</head>
+<body>
+<main>
+    <form action="">
+        <div id="container">
+            <div class="text-wapper">
+                <h1>テキスト型</h1>
 
-          <label>type="text"</label>
-          <input type="text">
+                <label>type="text"</label>
+                <input type="text">
 
-          <label>type="password"</label>
-          <input type="password">
+                <label>type="password"</label>
+                <input type="password">
 
-          <label>type="email"</label>
-          <input type="email">
+                <label>type="email"</label>
+                <input type="email">
 
-          <label>type="number"</label>
-          <input type="number">
+                <label>type="number"</label>
+                <input type="number">
 
-          <label>type="search"</label>
-          <input type="search">
+                <label>type="search"</label>
+                <input type="search">
 
-          <label>type="tel"</label>
-          <input type="tel">
+                <label>type="tel"</label>
+                <input type="tel">
 
-          <label>type="url"</label>
-          <input type="url">
+                <label>type="url"</label>
+                <input type="url">
+            </div>
+
+            <div class="text-wapper">
+                <h3>テキスト型 - <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/Input#required">required属性</a></h3>
+                <label>type="text" required</label>
+                <input type="text" required name="required">
+            </div>
+
+            <div class="text-wapper">
+                <h3>テキスト型 - <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/Input#The_placeholder_attribute">placeholder属性</a></h3>
+                <label>type="text" placeholder="入力してください"</label>
+                <input type="text" placeholder="入力してください" name="placeholder">
+            </div>
+            
+
+            <div class="text-wapper">
+                <h3>テキスト型 - <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Attributes/autocomplete">autocomplete</a>属性</h3>
+
+                <label>type="text" autocomplete="off"</label>
+                <input type="text" autocomplete="off" name="autocomplete_off">
+
+                <label>type="text" autocomplete="on"</label>
+                <input type="text" autocomplete="on" name="autocomplete_on">
+
+                <label>type="text" autocomplete="name"</label>
+                <input type="text" autocomplete="name" name="autocomplete_name">
+
+                <label>type="text" autocomplete="email"</label>
+                <input type="text" autocomplete="email" name="autocomplete_email">
+
+                <label>type="text" autocomplete="username"</label>
+                <input type="text" autocomplete="username" name="autocomplete_username">
+            </div>
+            <div class="text-wapper">
+                <h3>テキスト型 - list属性, <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/datalist">datalist要素</a></h3>
+
+                <label>type="text" list="my-list"</label>
+                <input type="text" list="my-list" name="list-datalist">
+                
+                <datalist id="my-list">
+                    <option value="Chocolate">
+                    <option value="Coconut">
+                </datalist>
+            </div>
+
+            <hr>
+
+            <div class="type-wrapper">
+                <h1>日付・時間型</h1>
+
+                <label>type="date"</label>
+                <input type="date">
+
+                <label>type="datetime-local"</label>
+                <input type="datetime-local">
+
+                <label>type="month"</label>
+                <input type="month">
+
+                <label>type="week"</label>
+                <input type="week">
+
+                <label>type="time"</label>
+                <input type="time">
+
+                <label>type="datetime" <span
+                        class="warning">廃止されました。代わりに`&lt;input type="datetime-local"&gt;`を使います</span></label>
+                <input type="datetime">
+            </div>
+
+            <hr>
+
+            <div class="type-wrapper">
+                <h1>その他</h1>
+
+                <label>type="button"</label>
+                <input type="button">
+
+                <label>type="checkbox"</label>
+                <input type="checkbox">
+
+                <label>type="color"</label>
+                <input type="color">
+
+                <label>type="file"</label>
+                <input type="file">
+
+                <label>type="image"</label>
+                <input type="image">
+
+                <label>type="radio"</label>
+                <input type="radio">
+
+                <label>type="range"</label>
+                <input type="range">
+
+                <label>type="reset"</label>
+                <input type="reset">
+
+                <label>type="submit"</label>
+                <input type="submit">
+            </div>
         </div>
+    </form>
+</main>
 
-        <hr>
-
-        <div class="type-wrapper">
-          <h1>日付・時間型</h1>
-
-          <label>type="date"</label>
-          <input type="date">
-
-          <label>type="datetime-local"</label>
-          <input type="datetime-local">
-
-          <label>type="month"</label>
-          <input type="month">
-
-          <label>type="week"</label>
-          <input type="week">
-
-          <label>type="time"</label>
-          <input type="time">
-
-          <label>type="datetime" <span class="warning">廃止されました。代わりに`&lt;input type="datetime-local"&gt;`を使います</span></label>
-          <input type="datetime">
-        </div>
-
-        <hr>
-
-        <div class="type-wrapper">
-          <h1>その他</h1>
-
-          <label>type="button"</label>
-          <input type="button">
-
-          <label>type="checkbox"</label>
-          <input type="checkbox">
-
-          <label>type="color"</label>
-          <input type="color">
-
-          <label>type="file"</label>
-          <input type="file">
-
-          <label>type="image"</label>
-          <input type="image">
-
-          <label>type="radio"</label>
-          <input type="radio">
-
-          <label>type="range"</label>
-          <input type="range">
-
-          <label>type="reset"</label>
-          <input type="reset">
-
-          <label>type="submit"</label>
-          <input type="submit">
-        </div>
-      </div>
-    </main>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-      });
-    </script>
-  </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    });
+</script>
+</body>
 </html>
