@@ -267,9 +267,9 @@
     document.addEventListener('DOMContentLoaded', function() {
         // aタグのtargetをすべて'_blank'に置き換える
         const allATag = document.querySelectorAll('a');
-        for (let aTag of allATag) {
+        allATag.forEach(function(aTag) {
             aTag.target = '_blank';
-        }
+        });
 
         // inputに入力があるたびにブラウザの入力内容検証を実行する
         const allInputElements = document.querySelectorAll("input");
