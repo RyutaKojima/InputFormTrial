@@ -273,9 +273,14 @@
 
         // inputに入力があるたびにブラウザの入力内容検証を実行する
         const allInputElements = document.querySelectorAll("input");
+        var isDisplayedAlert = false;
         Array.prototype.forEach.call(allInputElements, function(element) {
             element.addEventListener("input", function(e) {
-                e.target.reportValidity();
+                if ('reportValidity' in e.target) {
+                    e.target.reportValidity();
+                } else if( ! isDisplayedAlert) {
+                    window.alert('このブラウザは`reportValidity()`に対応していません');
+                }
             });
         });
     });
