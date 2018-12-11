@@ -16,6 +16,11 @@
     <script defer src="/__/firebase/init.js"></script>
 
     <style>
+        summary {
+            color: blue;
+            cursor: pointer;
+        }
+
         input, label {
             margin: 10px 10px;
             display: block;
@@ -32,6 +37,14 @@
 </head>
 <body>
 <main>
+
+    <div class="hero">
+        <details>
+            <summary>QRコードを表示</summary>
+            <img src="assets/qrcode_201812110909.png" alt="QRコード">
+        </details>
+    </div>
+
     <form action="">
         <div id="container">
             <div class="text-wapper">
@@ -60,7 +73,8 @@
             </div>
 
             <div class="text-wapper">
-                <h3>テキスト型 - <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/autocapitalize">autocapitalize 属性</a></h3>
+                <h3>テキスト型 - <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/autocapitalize">autocapitalize
+                    属性</a></h3>
 
                 <label>type="text" autocapitalize="none"</label>
                 <input type="text" autocapitalize="none" name="autocapitalize_none">
@@ -99,7 +113,9 @@
             </div>
 
             <div class="text-wapper">
-                <h3>テキスト型 - <a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Forms/Data_form_validation#Validating_against_a_regular_expression">pattern 属性</a></h3>
+                <h3>テキスト型 - <a
+                        href="https://developer.mozilla.org/ja/docs/Learn/HTML/Forms/Data_form_validation#Validating_against_a_regular_expression">pattern
+                    属性</a></h3>
 
                 <label>type="text" pattern="[0-9]*" </label>
                 <input type="text" pattern="[0-9]*" name="pattern_numeric">
@@ -109,7 +125,8 @@
             </div>
 
             <div class="text-wapper">
-                <h3>テキスト型 - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode">inputmode属性</a></h3>
+                <h3>テキスト型 - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode">inputmode属性</a>
+                </h3>
 
                 <label>type="text" inputmode="none" </label>
                 <input type="text" inputmode="none" name="inputmode_none">
@@ -129,7 +146,8 @@
                 <label>type="text" inputmode="search" </label>
                 <input type="text" inputmode="search" name="inputmode_search">
 
-                <label>type="text" inputmode="email" <span class="warning">通常は&lt;input type="email"&gt;を使用する</span></label>
+                <label>type="text" inputmode="email" <span
+                        class="warning">通常は&lt;input type="email"&gt;を使用する</span></label>
                 <input type="text" inputmode="email" name="inputmode_email">
 
                 <label>type="text" inputmode="url" <span class="warning">通常は&lt;input type="url"&gt;を使用する</span></label>
@@ -137,20 +155,24 @@
             </div>
 
             <div class="text-wapper">
-                <h3>テキスト型 - <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/Input#required">required属性</a></h3>
+                <h3>テキスト型 - <a
+                        href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/Input#required">required属性</a></h3>
                 <label>type="text" required</label>
                 <input type="text" required name="required">
             </div>
 
             <div class="text-wapper">
-                <h3>テキスト型 - <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/Input#The_placeholder_attribute">placeholder属性</a></h3>
+                <h3>テキスト型 - <a
+                        href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/Input#The_placeholder_attribute">placeholder属性</a>
+                </h3>
                 <label>type="text" placeholder="入力してください"</label>
                 <input type="text" placeholder="入力してください" name="placeholder">
             </div>
-            
+
 
             <div class="text-wapper">
-                <h3>テキスト型 - <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Attributes/autocomplete">autocomplete</a>属性</h3>
+                <h3>テキスト型 - <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Attributes/autocomplete">autocomplete</a>属性
+                </h3>
 
                 <label>type="text" autocomplete="off"</label>
                 <input type="text" autocomplete="off" name="autocomplete_off">
@@ -168,11 +190,12 @@
                 <input type="text" autocomplete="username" name="autocomplete_username">
             </div>
             <div class="text-wapper">
-                <h3>テキスト型 - list属性, <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/datalist">datalist要素</a></h3>
+                <h3>テキスト型 - list属性, <a
+                        href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/datalist">datalist要素</a></h3>
 
                 <label>type="text" list="my-list"</label>
                 <input type="text" list="my-list" name="list-datalist">
-                
+
                 <datalist id="my-list">
                     <option value="Chocolate">
                     <option value="Coconut">
