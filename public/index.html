@@ -264,13 +264,22 @@
 </main>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         // aタグのtargetをすべて'_blank'に置き換える
-        const aTagAll = document.querySelectorAll('a');
-        for (let aTag of aTagAll) {
+        const allATag = document.querySelectorAll('a');
+        for (let aTag of allATag) {
             aTag.target = '_blank';
         }
+
+        // inputに入力があるたびにブラウザの入力内容検証を実行する
+        const allInputElements = document.querySelectorAll("input");
+        allInputElements.forEach(function(element) {
+            element.addEventListener("input", function(e) {
+                e.target.reportValidity();
+            });
+        });
     });
+    
 </script>
 </body>
 </html>
