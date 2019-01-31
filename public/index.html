@@ -202,6 +202,28 @@
                 </datalist>
             </div>
 
+            <div class="text-wapper">
+                <h3>テキスト型 - ペースト禁止
+                    <a href="https://developer.mozilla.org/ja/docs/Web/API/HTMLElement/onpaste">HTMLElement.onpaste</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/Events/paste">イベント: paste</a>
+                </h3>
+
+                <label>type="text" onpaste="return false;"</label>
+                <input type="text" onpaste="return false;" name="deny_paste">
+            </div>
+
+            <div class="text-wapper">
+                <h3>テキスト型 - コピー禁止
+                    <a href="https://developer.mozilla.org/ja/docs/Web/API/HTMLElement/oncopy">element.oncopy</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/API/HTMLElement/oncut">element.oncut</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/Events/copy">イベント: copy</a>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/Events/cut">イベント: cut</a>
+                </h3>
+
+                <label>type="text" oncopy="return false;" oncut="return false;"</label>
+                <input type="text" oncopy="return false;" oncut="return false;" name="deny_copy">
+            </div>            
+
             <hr>
 
             <div class="type-wrapper">
