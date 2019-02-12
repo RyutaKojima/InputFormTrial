@@ -33,6 +33,22 @@
         .warning {
             color: red;
         }
+
+        .icon-html5 {
+            margin-left: 10px;
+            border-left: 4px solid;
+            display: inline-block;
+            min-width: 20px;
+            vertical-align: baseline;
+            border-radius: 2px;
+            padding: .45em .35em .3em;
+            font-family: Helvetica,arial,sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: normal;
+            background: #e4f0f5;
+            border-color: #3d7e9a;
+        }
     </style>
 </head>
 <body>
@@ -50,25 +66,49 @@
             <div class="text-wapper">
                 <h1>テキスト型</h1>
 
-                <label>type="text"</label>
+                <label>
+                    type="text"
+                </label>
                 <input type="text">
 
-                <label>type="password"</label>
+                <label><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/password">
+                    type="password"
+                </a></label>
                 <input type="password">
 
-                <label>type="email"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/email">
+                        MDN: type="email"
+                    </a>
+                </label>
                 <input type="email">
 
-                <label>type="number"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/Input/number">
+                        MDN: type="number"
+                    </a>
+                </label>
                 <input type="number">
 
-                <label>type="search"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/search">
+                        type="search"
+                    </a>
+                </label>
                 <input type="search">
 
-                <label>type="tel"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/Input/tel">
+                        MDN: type="tel"
+                    </a>
+                </label>
                 <input type="tel">
 
-                <label>type="url"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/url">
+                        type="url"
+                    </a>
+                </label>
                 <input type="url">
             </div>
 
@@ -229,23 +269,47 @@
             <div class="type-wrapper">
                 <h1>日付・時間型</h1>
 
-                <label>type="date"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/date">
+                        type="date"
+                    </a>
+                </label>
                 <input type="date">
 
-                <label>type="datetime-local"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/datetime-local">
+                        type="datetime-local"
+                    </a>
+                </label>
                 <input type="datetime-local">
 
-                <label>type="month"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/month">
+                        type="month"
+                    </a>
+                </label>
                 <input type="month">
 
-                <label>type="week"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/week">
+                        type="week"
+                    </a>
+                </label>
                 <input type="week">
 
-                <label>type="time"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/time">
+                        type="time"
+                    </a>
+                </label>
                 <input type="time">
 
-                <label>type="datetime" <span
-                        class="warning">廃止されました。代わりに`&lt;input type="datetime-local"&gt;`を使います</span></label>
+                <label>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/datetime">
+                        type="datetime"
+                    </a>
+                    <span class="warning">廃止されました。代わりに`&lt;input type="datetime-local"&gt;`を使います</span>
+                </label>
                 <input type="datetime">
             </div>
 
@@ -260,9 +324,13 @@
                 <label>type="checkbox"</label>
                 <input type="checkbox">
 
-                <label>type="color"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/color">
+                        type="color"
+                    </a>
+                </label>
                 <input type="color">
-
+                
                 <label>type="file"</label>
                 <input type="file">
 
@@ -272,7 +340,11 @@
                 <label>type="radio"</label>
                 <input type="radio">
 
-                <label>type="range"</label>
+                <label><span class="icon-html5">HTML5</span>
+                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/input/range">
+                        type="range"
+                    </a>
+                </label>
                 <input type="range">
 
                 <label>type="reset"</label>
